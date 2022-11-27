@@ -1,18 +1,18 @@
 # PersonalLinkShortener CloudFormation template.yml
 # =================================================
 
-AWSTemplateFormatVersion: "2010-09-09"
-Description: Create Personal Link Shortener Solution
+# AWSTemplateFormatVersion: "2010-09-09"
+# Description: Create Personal Link Shortener Solution
 
 Parameters:
 
   DynamoDBTableName:
     Type: String
-    Default: frlink
+    Default: ockamlink
   CustomDomainName:
-    Description: I'm using frlink.nl for this purpose, an A record with a different name (like short.yourdomain.nl) should work as well  
+    Description: I'm using ockamlink.nl for this purpose, an A record with a different name (like short.yourdomain.nl) should work as well  
     Type: String
-    Default: frlink.nl
+    Default: ockamlink.nl
   StageName:
     Type: String
     Default: prod
