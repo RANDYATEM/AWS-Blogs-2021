@@ -13,12 +13,12 @@ The application architecture uses AWS Lambda, Amazon API Gateway, Amazon DynamoD
 
 The following services will be used to create a URL Shortener:
 
-AWS API Gateway: ( /create: to create a shortened url and /t/{id} to redirect to long url)
-AWS IAM: (Role and Policy for Permissions to call DynamoDB from Lambda)
-AWS Lambda: (Application Logic)
-AWS DynamoDB: (Persistent Store to save our Data)
-AWS ACM: (Optional: Certificate for your Domain)
-AWS Route53: (Optional: DNS for the domain that you want to associate to your API)
+* AWS API Gateway: ( /create: to create a shortened url and /t/{id} to redirect to long url)
+* AWS IAM: (Role and Policy for Permissions to call DynamoDB from Lambda)
+* AWS Lambda: (Application Logic)
+* AWS DynamoDB: (Persistent Store to save our Data)
+* AWS ACM: (Optional: Certificate for your Domain)
+* AWS Route53: (Optional: DNS for the domain that you want to associate to your API)
 
 The flow will be like the following:
 
