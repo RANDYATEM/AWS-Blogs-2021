@@ -22,9 +22,9 @@ The following services will be used to create a URL Shortener:
 
 The flow will be like the following:
 
-POST Request gets made to the /create request path with the long_url data in the payload
-This data is then used by the Lambda function to create a short url and create a entry in DynamoDB
-In DynamoDB the entry is created with the short id as the hash key and the long url as one of the attributes
-The response to the client will be the short url
-When a GET method is performed on the id eg /t/{short_id}, a lookup gets done on the DynamoDB table, retrieves the long url from the table
-A 301 redirect gets performed on API Gateway and the client gets redirected to the intended url
+- POST Request gets made to the /create request path with the long_url data in the payload
+- This data is then used by the Lambda function to create a short url and create a entry in DynamoDB
+- In DynamoDB the entry is created with the short id as the hash key and the long url as one of the attributes
+- The response to the client will be the short url
+- When a GET method is performed on the id eg /t/{short_id}, a lookup gets done on the DynamoDB table, retrieves the long url from the table
+- A 301 redirect gets performed on API Gateway and the client gets redirected to the intended url
